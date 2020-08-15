@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Norbu</title>
+    <link rel="icon" type="image/png" href="images/icons/title-icon.png" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Raleway|Hanalei|Darker+Grotesque|Monoton|ZCOOL+KuaiLe|Major+Mono+Display|Slabo+27px|Staatliches|Patrick+Hand" rel="stylesheet" />
+    <link rel="stylesheet" href="./thimphu.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lock-Down-Info</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dzongkhag
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Western Dzongkhags</a>
+                <a class="dropdown-item" href="#">Central Dzongkhags </a>
+                <a class="dropdown-item" href="#">Southern Dzongkhags </a>
+                <a class="dropdown-item" href="#">Eastern Dzongkhags </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">All Dzongkhags</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br /><br />
+    <div class="container">
+      <p class="disclaimer">
+        The follwing information are collected form vaiorus sources including BBS, Kuensel and different ministries. We are working hard to continusoly update the data. We update our data twice
+        everyday to ensure that our data are new and updated constantly
+      </p>
+      <dic class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 category-parent">
+          <div class="category" id="health">
+            <p class="topic">Health Services</p>
+            <i class="fas fa-chevron-circle-down"></i>
+          </div>
+          <div class="health-info">
+            <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1" style="border: solid gray 1px;">
+              Now Brewing… Font Awesome 6! The next generation of our icon library + toolkit is coming with more icons, more styles, more services, and more awesome. ‎Font Awesome Icons · ‎Icons ·
+              ‎Arrow Icons · ‎Facebook Icons
+            </div>
+          </div>
+        </div>
+      </dic>
+    </div>
+  </body>
+  <script>
+    $("#health").click(function () {
+      if ($("#health").hasClass("active")) {
+        $(".health-info").css("display", "none");
+        $("#health").removeClass("active");
+      } else {
+        $(".health-info").css("display", "block");
+        $("#health").addClass("active");
+      }
+    });
+  </script>
+</html>

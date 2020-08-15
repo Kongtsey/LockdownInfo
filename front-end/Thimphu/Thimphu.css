@@ -1,0 +1,27 @@
+.disclaimer {
+  border: solid gray 1px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.category-parent {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+.category {
+  background: #ffbe16;
+  height: 50px;
+  padding: 10px 10px 0px 20px;
+}
+.topic {
+  float: left;
+  font-size: larger;
+}
+.fa-chevron-circle-down {
+  float: right;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+.health-info {
+  display: none;
+}

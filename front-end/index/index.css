@@ -1,0 +1,22 @@
+.dzongkhags {
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+}
+.inner-dzongkhags {
+  height: 60px;
+  background-color: #475d7226;
+}
+.dzongkhag-name {
+  position: relative;
+  text-align: center;
+  top: 17px;
+  color: rgb(36, 77, 189);
+}
+.dzong-image {
+  width: auto;
+  height: 60px;
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

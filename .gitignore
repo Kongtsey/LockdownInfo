@@ -2,5 +2,9 @@
 pictures/
 .idea/
 cloudVisionAPIKeyKarmas.json
+<<<<<<< HEAD
+html_formatter/
+=======
 venv/
 python3VEnv/
+>>>>>>> master

@@ -58,6 +58,12 @@
 .sub-category-gas-info {
   display: none;
 }
+.sub-category-teleconsultation-info {
+  display: none;
+}
+.sub-category-health-incharge-info {
+  display: none;
+}
 /*_________________________________________ */
 .sub-category {
   margin-left: 50px;
@@ -70,6 +76,10 @@
 }
 .active {
   color: #09b011 !important;
+}
+.sub-category-disclaimer {
+  font-size: 10px;
+  margin-left: 50px;
 }
 /*_________________________________________ */
 /*TABLE */

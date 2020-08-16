@@ -357,6 +357,9 @@
 
       <!-- ___________________________________________________________________________________________________________________________ -->
       <!-- H E A L T H   S E C T O R -->
+
+
+
       <div class="row">
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 category-parent">
           <div class="category" id="health">
@@ -364,10 +367,13 @@
             <i class="fas fa-chevron-circle-down"></i>
             <i class="fas fa-chevron-circle-up"></i>
           </div>
+          <br/>
           <div class="health-info">
-            <h6 class="sub-category sub-category-drinks">Dzongkhag Health Incharge</h6>
+            <h6 class="sub-category sub-category-teleconsultation">Teleconsultation services</h6>
+            <span class="sub-category-disclaimer">JDWNRH has arranged teleconsultation services during the lockdown period to ensure medical services are available
+            everyday from 9am-5pm.</span>
             <hr />
-            <div class="row  sub-category-drinks-info">
+            <div class="row  sub-category-teleconsultation-info">
               <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
                 <table class="table table-striped">
                   <thead>
@@ -481,9 +487,10 @@
                 </table>
               </div>
             </div>
-            <h6 class="sub-category sub-category-drinks">Dzongkhag Health Incharge</h6>
+
+            <h6 class="sub-category sub-category-health-incharge">Dzongkhag Health Incharges</h6>
             <hr />
-            <div class="row  sub-category-drinks-info">
+            <div class="row  sub-category-health-incharge-info">
               <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
                 <table class="table table-striped">
                   <thead>
@@ -645,6 +652,25 @@
         $('#health .fa-chevron-circle-up').css("display", "block")
       }
     });
+     $(".sub-category-teleconsultation").click(function () {
+        if ($(".sub-category-teleconsultation").hasClass("active")) {
+          $(".sub-category-teleconsultation-info").css("display", "none");
+          $(".sub-category-teleconsultation").removeClass("active");
+        } else {
+          $(".sub-category-teleconsultation-info").css("display", "block");
+          $(".sub-category-teleconsultation").addClass("active");
+        }
+      });
+
+       $(".sub-category-health-incharge").click(function () {
+          if ($(".sub-category-health-incharge").hasClass("active")) {
+            $(".sub-category-health-incharge-info").css("display", "none");
+            $(".sub-category-health-incharge").removeClass("active");
+          } else {
+            $(".sub-category-health-incharge-info").css("display", "block");
+            $(".sub-category-health-incharge").addClass("active");
+          }
+        });
 
     // ______________________________________________________________________________________________________________________________
     $("#toll-free").click(function () {

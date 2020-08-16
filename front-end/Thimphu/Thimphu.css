@@ -41,6 +41,9 @@
 .health-info {
   display: none;
 }
+.task-force-info {
+  display: none;
+}
 
 /*_________________________________________ */
 .essential-supplies-info {
@@ -56,6 +59,9 @@
   display: none;
 }
 .sub-category-gas-info {
+  display: none;
+}
+.sub-category-task-force-info {
   display: none;
 }
 /*_________________________________________ */

@@ -4,6 +4,10 @@ LockdownInfo is a site to aggregate all covid related contacts for Bhutan.
 
 The site is yet to be live but heres the link if you wanna bookmark it: http://lockdowninfo.live/
 
+## Dependencies
+
+- [pandas]('https://github.com/pandas-dev/pandas')
+- [google.cloud]('https://github.com/googleapis/google-cloud-python')
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

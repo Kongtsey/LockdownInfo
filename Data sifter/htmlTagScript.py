@@ -1,6 +1,7 @@
 import pandas as pd
 
-path = "./contactCSV/healthInCharge - Sheet1.csv"
+fileName = input("Enter the csv fileName")
+path = "./contactCSV/"+fileName
 contactDetails = pd.read_csv(path)
 htmlFileName = input("Enter a file name to save: ")
 numCol = int(input("Enter number of columns: "))

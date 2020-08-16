@@ -32,14 +32,22 @@
 .health-info {
   display: none;
 }
+
+/*_________________________________________ */
 .essential-supplies-info {
   display: none;
 }
 
-/*TABLE */
-table {
-  border: solid gray 1px;
+.sub-category-food-info {
+  display: none;
 }
+/*_________________________________________ */
+.sub-category {
+  margin-left: 50px;
+}
+/*_________________________________________ */
+/*TABLE */
+
 .table thead th {
   font-size: 13px;
 }

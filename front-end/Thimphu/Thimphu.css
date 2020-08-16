@@ -47,6 +47,9 @@
 .task-force-info {
   display: none;
 }
+.services-info {
+  display: none;
+}
 
 /*_________________________________________ */
 .essential-supplies-info {
@@ -71,6 +74,9 @@
   display: none;
 }
 .sub-category-health-incharge-info {
+  display: none;
+}
+.sub-category-electrical-services-info {
   display: none;
 }
 /*_________________________________________ */

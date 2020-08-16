@@ -764,18 +764,19 @@
           </div>
         </div>
       </div>
+      <br/>
       <!--_____________________________________________________________________________________________________________________________-->
       <!--S E R V I C E S -->
-      <!-- S E R V I C E S-->
       <div class="row">
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 category-parent">
           <div class="category" id="services">
             <p class="topic">Services</p>
             <i class="fas fa-chevron-circle-down"></i>
+            <i class="fas fa-chevron-circle-up"></i>
           </div>
           <br />
-          <div class="electrical-services">
-            <h6 class="sub-category sub-category-drinks">Electrical Services</h6>
+          <div class="services-info">
+            <h6 class="sub-category sub-category-electrical-services">Electrical Services</h6>
             <hr />
             <div class="row  sub-category-electrical-services-info">
               <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
@@ -1214,11 +1215,6 @@
         </div>
       </div>
     
-      <!-- ___________________________________________________________________________________________________________________________ -->
-      <!--End of the container  -->
-      <!-- ___________________________________________________________________________________________________________________________ -->
-    </div>
-  </body>
 
 
 
@@ -1360,6 +1356,29 @@
             $(".sub-category-task-force").addClass("active");
           }
         });
+    // ______________________________________________________________________________________________________________________________
+    $("#services").click(function () {
+        if ($("#services").hasClass("active-category")) {
+          $(".services-info").css("display", "none");
+          $("#services").removeClass("active-category");
+          $('#services .fa-chevron-circle-down').css("display", "block")
+          $('#services .fa-chevron-circle-up').css("display", "none")
+        } else {
+          $(".services-info").css("display", "block");
+          $("#services").addClass("active-category");
+          $('#services .fa-chevron-circle-down').css("display", "none")
+          $('#services .fa-chevron-circle-up').css("display", "block")
+        }
+      });
+      $(".sub-category-electrical-services").click(function () {
+        if ($(".sub-category-electrical-services").hasClass("active")) {
+          $(".sub-category-electrical-services-info").css("display", "none");
+          $(".sub-category-electrical-services").removeClass("active");
+        } else {
+          $(".sub-category-electrical-services-info").css("display", "block");
+          $(".sub-category-electrical-services").addClass("active");
+        }
+      });
     // ______________________________________________________________________________________________________________________________
   </script>
 </html>

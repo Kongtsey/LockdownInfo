@@ -2,3 +2,5 @@
 pictures/
 .idea/
 cloudVisionAPIKeyKarmas.json
+venv/
+python3VEnv/

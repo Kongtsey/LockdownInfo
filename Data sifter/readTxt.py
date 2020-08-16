@@ -1,10 +1,11 @@
 import os
 import io
+
 from google.cloud import vision
+from google.cloud.vision import types
 from PIL import Image, ImageDraw
 
-
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="./LockdownEssentials-bb7e7b837ace.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="./cloudVisionAPIKeyKarmas.json"
 
 def detect_text(path):
     print("Calling the API.")
@@ -29,6 +30,7 @@ def detect_text(path):
         )
 directory = "./pictures"
 pictures = []
+testImage = "./pictures/covid-task-force.jpg"
 for fileName in os.listdir(directory):
     if(fileName.endswith(".JPG") or fileName.endswith(".jpg")):
         pictures.append(fileName)
@@ -37,3 +39,4 @@ for eachPic in pictures:
     image+=eachPic
     print("Processing: currently",image)
     detect_text(image)
+# detect_text(testImage)

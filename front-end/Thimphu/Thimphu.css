@@ -1,3 +1,6 @@
+* {
+  transition: ease all 50ms;
+}
 .disclaimer {
   border: solid gray 1px;
   padding: 20px;
@@ -25,10 +28,16 @@
   color: gray;
   cursor: pointer;
 }
+.fa-chevron-circle-up {
+  float: right;
+  font-size: 30px;
+  color: white !important;
+  cursor: pointer;
+  display: none;
+}
 .toll-free-info {
   display: none;
 }
-
 .health-info {
   display: none;
 }
@@ -43,12 +52,24 @@
 .sub-category-drinks-info {
   display: none;
 }
+.sub-category-online-info {
+  display: none;
+}
 .sub-category-gas-info {
   display: none;
 }
 /*_________________________________________ */
 .sub-category {
   margin-left: 50px;
+  color: #0b2a87;
+  transition: all 200ms ease;
+}
+.active-category {
+  color: white;
+  transition: all 50ms ease;
+}
+.active {
+  color: #09b011 !important;
 }
 /*_________________________________________ */
 /*TABLE */

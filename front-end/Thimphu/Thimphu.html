@@ -206,7 +206,9 @@
                 </table>
               </div>
             </div>
+
             <!-- _______________________________________________ -->
+          
             <h6 class="sub-category sub-category-gas">LPG Gas Delivery</h6>
             <hr />
             <div class="row  sub-category-gas-info">
@@ -233,54 +235,54 @@
                       <td>176606897/77767871</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Wangdi Phub Gas Delivery</td>
+                      <td>Changjalu</td>
+                      <td>17648420</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Kunzang Gas Delivery Services</td>
+                      <td>Changzamtog</td>
+                      <td>17638510</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Kinley Home Delivery Services</td>
+                      <td>Changangkha</td>
+                      <td>77208655 / 17668859</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Tashi Rabten Gas Delivery</td>
+                      <td>Pamtsho</td>
+                      <td>17862098 / 77361995 / 17862098</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Safe Delivery Gas</td>
+                      <td>Olakha</td>
+                      <td>77237465 / 77855737</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Azha Pasa Gas Delivery Services</td>
+                      <td>Near NPPF Colony</td>
+                      <td>17110975 / 17959429 / 77436583</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Nazhoen gas delivery services</td>
+                      <td>Taba/Dechenchholing</td>
+                      <td>17589529/17713205</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>TT Gas Agent</td>
+                      <td>Simtokha</td>
+                      <td>77636429 / 17562791</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Tandin Gas Agent</td>
+                      <td>Taba/Dechenchholing/Kabisa</td>
+                      <td>17579499 / 17652590 / 17579499</td>
                     </tr>
                     <tr>
-                      <td>Fhola Tshongkhang</td>
-                      <td>Not Given</td>
-                      <td>176606897/77767871</td>
+                      <td>Bhutan Industrial</td>
+                      <td>17961436</td>
+                      <td>Thimphu Throm (Only Commercial Gas)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -346,23 +348,42 @@
     // ______________________________________________________________________________________________________________________________
     // E S S E N T I A L   S U P P L I E S  
 
-    $("#essential-supplies").click(function () {
-      if ($("#essential-supplies").hasClass("active")) {
-        $(".essential-supplies-info").css("display", "none");
-        $("#essential-supplies").removeClass("active");
-      } else {
-        $(".essential-supplies-info").css("display", "block");
-        $("#essential-supplies").addClass("active");
-      }
-    });
-     $(".sub-category-food").click(function () {
-        if ($(".sub-category-food").hasClass("active")) {
-          $(".sub-category-food-info").css("display", "none");
-          $(".sub-category-food").removeClass("active");
+      $("#essential-supplies").click(function () {
+        if ($("#essential-supplies").hasClass("active")) {
+          $(".essential-supplies-info").css("display", "none");
+          $("#essential-supplies").removeClass("active");
         } else {
-          $(".sub-category-food-info").css("display", "block");
-          $(".sub-category-food").addClass("active");
+          $(".essential-supplies-info").css("display", "block");
+          $("#essential-supplies").addClass("active");
         }
+      });
+      $(".sub-category-food").click(function () {
+          if ($(".sub-category-food").hasClass("active")) {
+            $(".sub-category-food-info").css("display", "none");
+            $(".sub-category-food").removeClass("active");
+          } else {
+            $(".sub-category-food-info").css("display", "block");
+            $(".sub-category-food").addClass("active");
+          }
+      });
+      $(".sub-category-drinks").click(function () {
+          if ($(".sub-category-drinks").hasClass("active")) {
+            $(".sub-category-drinks-info").css("display", "none");
+            $(".sub-category-drinks").removeClass("active");
+          } else {
+            $(".sub-category-drinks-info").css("display", "block");
+            $(".sub-category-drinks").addClass("active");
+          }
+      });
+
+      $(".sub-category-gas").click(function () {
+          if ($(".sub-category-gas").hasClass("active")) {
+            $(".sub-category-gas-info").css("display", "none");
+            $(".sub-category-gas").removeClass("active");
+          } else {
+            $(".sub-category-gas-info").css("display", "block");
+            $(".sub-category-gas").addClass("active");
+          }
       });
 
     // ______________________________________________________________________________________________________________________________

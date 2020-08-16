@@ -37,8 +37,13 @@
 .essential-supplies-info {
   display: none;
 }
-
 .sub-category-food-info {
+  display: none;
+}
+.sub-category-drinks-info {
+  display: none;
+}
+.sub-category-gas-info {
   display: none;
 }
 /*_________________________________________ */

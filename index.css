@@ -1,22 +1,134 @@
-.dzongkhags {
-  height: 100px;
-  width: 100%;
-  padding: 10px;
+* {
+  transition: ease all 50ms;
 }
-.inner-dzongkhags {
-  height: 60px;
-  background-color: #475d7226;
+.disclaimer {
+  border: solid gray 1px;
+  padding: 20px;
+  border-radius: 5px;
 }
-.dzongkhag-name {
-  position: relative;
-  text-align: center;
-  top: 17px;
-  color: rgb(36, 77, 189);
+.category-parent {
+  margin: 10px 0px;
+  cursor: pointer;
 }
-.dzong-image {
-  width: auto;
-  height: 60px;
+.category {
+  background: #ffbe16;
+  height: 50px;
+  padding: 10px 10px 0px 20px;
+}
+.sub-category {
+  margin-left: 30px;
+}
+.topic {
   float: left;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  font-size: larger;
 }
+.fa-chevron-circle-down {
+  float: right;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+  display: none;
+}
+.fa-chevron-circle-up {
+  float: right;
+  font-size: 30px;
+  color: white !important;
+  cursor: pointer;
+}
+/*
+.essential-supplies-info {
+  display: none;
+}
+ .toll-free-info {
+  display: none;
+}
+.task-force-info {
+  display: none;
+}
+.health-info {
+  display: none;
+}
+.task-force-info {
+  display: none;
+}
+.services-info {
+  display: none;
+} */
+
+/*_________________________________________ */
+.sub-category-food-info {
+  display: none;
+}
+.sub-category-drinks-info {
+  display: none;
+}
+.sub-category-online-info {
+  display: none;
+}
+.sub-category-gas-info {
+  display: none;
+}
+.sub-category-task-force-info {
+  display: none;
+}
+.sub-category-teleconsultation-info {
+  display: none;
+}
+.sub-category-health-incharge-info {
+  display: none;
+}
+.sub-category-electrical-services-info {
+  display: none;
+}
+.sub-category-contraceptive-info {
+  display: none;
+}
+.sub-category-pharmacy-info {
+  display: none;
+}
+.sub-category-petrol-services-info {
+  display: none;
+}
+.sub-category-operational-services-info {
+  display: none;
+}
+.sub-category-supply-center-info {
+  display: none;
+}
+.sub-category-helpline-info {
+  display: none;
+}
+/*__________________________________________*/
+.sub-sub-category table {
+  display: none;
+}
+/*_________________________________________ */
+.sub-category {
+  margin-left: 50px;
+  color: #0b2a87;
+  transition: all 200ms ease;
+}
+.active-category {
+  color: white;
+  transition: all 50ms ease;
+}
+.active {
+  color: gray !important;
+}
+.sub-category-disclaimer {
+  font-size: 13px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+
+/*_________________________________________ */
+/*TABLE */
+
+.table thead th {
+  font-size: 13px;
+}
+.table td {
+  font-size: 13px;
+}
+
+/*_________________________________________ */

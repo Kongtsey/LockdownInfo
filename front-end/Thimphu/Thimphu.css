@@ -92,6 +92,16 @@
 .sub-category-operational-services-info {
   display: none;
 }
+.sub-category-supply-center-info {
+  display: none;
+}
+.sub-category-helpline-info {
+  display: none;
+}
+/*__________________________________________*/
+.sub-sub-category table {
+  display: none;
+}
 /*_________________________________________ */
 .sub-category {
   margin-left: 50px;
@@ -103,13 +113,14 @@
   transition: all 50ms ease;
 }
 .active {
-  color: #09b011 !important;
+  color: gray !important;
 }
 .sub-category-disclaimer {
   font-size: 13px;
   margin-left: 70px;
   margin-bottom: 10px;
 }
+
 /*_________________________________________ */
 /*TABLE */
 
@@ -119,3 +130,5 @@
 .table td {
   font-size: 13px;
 }
+
+/*_________________________________________ */

@@ -79,6 +79,9 @@
 .sub-category-electrical-services-info {
   display: none;
 }
+.sub-category-contraceptive-info {
+  display: none;
+}
 /*_________________________________________ */
 .sub-category {
   margin-left: 50px;
@@ -93,8 +96,9 @@
   color: #09b011 !important;
 }
 .sub-category-disclaimer {
-  font-size: 10px;
-  margin-left: 50px;
+  font-size: 13px;
+  margin-left: 70px;
+  margin-bottom: 10px;
 }
 /*_________________________________________ */
 /*TABLE */

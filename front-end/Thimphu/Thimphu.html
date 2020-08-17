@@ -373,8 +373,8 @@
             <h6 class="sub-category sub-category-teleconsultation">Teleconsultation services</h6>
             <hr/>
             <div class="row  sub-category-teleconsultation-info">
-              <span class="sub-category-disclaimer">JDWNRH has arranged teleconsultation services during the lockdown period to ensure
-                medical services are available everyday from 9am-5pm.</span>
+              <div class="sub-category-disclaimer">JDWNRH has arranged teleconsultation services during the lockdown period to ensure
+                medical services are available everyday from 9am-5pm.</div>
               <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
                 <table class="table table-striped">
                   <thead>
@@ -489,7 +489,80 @@
                 <hr>
               </div>
             </div>
+            <!-- _______________________________________________ -->
 
+            <h6 class="sub-category sub-category-contraceptive">Contraceptive Services</h6>
+            <hr />
+            <div class="row  sub-category-contraceptive-info">
+              <div class="sub-category-disclaimer">The services are available from respective health centers.</div>
+              <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"> Health Centers</th>
+                      <th scope="col">Phone number</th>
+            
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dechencholing BHU </td>
+                      <td>17625418</td>
+                    </tr>
+                    <tr>
+                      <td>Kuzuchen BHU</td>
+                      <td>77808678</td>
+                    </tr>
+                    <tr>
+                      <td>Hongtsho BHU</td>
+                      <td>17707858</td>
+                    </tr>
+                    <tr>
+                      <td>Chamgang BHU</td>
+                      <td>17692952</td>
+                    </tr>
+                    <tr>
+                      <td>Chamgang RBP BHU</td>
+                      <td>17733331</td>
+                    </tr>
+                    <tr>
+                      <td>Genekha BHU</td>
+                      <td>77246057</td>
+                    </tr>
+                    <tr>
+                      <td>Chanjiji Satellite Clinic</td>
+                      <td>17600150</td>
+                    </tr>
+                    <tr>
+                      <td>Motithang Satellite Clinic</td>
+                      <td>17609951</td>
+                    </tr>
+                    <tr>
+                      <td>Hejo Satellite Clinic</td>
+                      <td>17696680</td>
+                    </tr>
+                    <tr>
+                      <td>RBP Head Quarter BHU</td>
+                      <td>17698813</td>
+                    </tr>
+                    <tr>
+                      <td>Lingzhi BHU</td>
+                      <td>17852054</td>
+                    </tr>
+                    <tr>
+                      <td>Soe BHU</td>
+                      <td>17767323</td>
+                    </tr>
+                    <tr>
+                      <td>Barshong BHU</td>
+                      <td>17308585</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr>
+              </div>
+            </div>
+            <!-- _______________________________________________ -->
             <h6 class="sub-category sub-category-health-incharge">Dzongkhag Health Incharges</h6>
             <hr />
             <div class="row  sub-category-health-incharge-info">
@@ -570,6 +643,7 @@
                 <hr>
               </div>
             </div>
+
           </div>
           <br />
         </div>
@@ -1313,7 +1387,7 @@
           $(".sub-category-teleconsultation").addClass("active");
         }
       });
-
+  
        $(".sub-category-health-incharge").click(function () {
           if ($(".sub-category-health-incharge").hasClass("active")) {
             $(".sub-category-health-incharge-info").css("display", "none");
@@ -1323,6 +1397,15 @@
             $(".sub-category-health-incharge").addClass("active");
           }
         });
+         $(".sub-category-contraceptive").click(function () {
+            if ($(".sub-category-contraceptive").hasClass("active")) {
+              $(".sub-category-contraceptive-info").css("display", "none");
+              $(".sub-category-contraceptive").removeClass("active");
+            } else {
+              $(".sub-category-contraceptive-info").css("display", "block");
+              $(".sub-category-contraceptive").addClass("active");
+            }
+          });
 
     // ______________________________________________________________________________________________________________________________
     $("#toll-free").click(function () {

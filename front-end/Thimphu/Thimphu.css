@@ -27,15 +27,19 @@
   font-size: 30px;
   color: gray;
   cursor: pointer;
+  display: none;
 }
 .fa-chevron-circle-up {
   float: right;
   font-size: 30px;
   color: white !important;
   cursor: pointer;
+}
+/*
+.essential-supplies-info {
   display: none;
 }
-.toll-free-info {
+ .toll-free-info {
   display: none;
 }
 .task-force-info {
@@ -49,12 +53,9 @@
 }
 .services-info {
   display: none;
-}
+} */
 
 /*_________________________________________ */
-.essential-supplies-info {
-  display: none;
-}
 .sub-category-food-info {
   display: none;
 }

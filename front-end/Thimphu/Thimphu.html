@@ -701,7 +701,7 @@
           </div>
           <br />
           <div class="services-info">
-            <h6 class="sub-category sub-category-electrical-services">Electrical Services</h6>
+            <h6 class="sub-category sub-category-electrical-services">Electrical Services (Thimphu Thromde)</h6>
             <hr />
             <div class="row  sub-category-electrical-services-info">
               <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
@@ -1137,7 +1137,7 @@
             </div>
             <!-- ______________________________________________________________ -->
 
-            <h6 class="sub-category sub-category-petrol-services">Petroleum Oil Lubricant Services</h6>
+            <h6 class="sub-category sub-category-petrol-services">Petroleum Oil Lubricant Services (Thimphu Thromde)</h6>
             <hr />
             <div class="row  sub-category-petrol-services-info">
               <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
@@ -1182,8 +1182,91 @@
               </div>
             </div>
             <!-- ______________________________________________________________ -->
-
-
+            
+            <h6 class="sub-category sub-category-operational-services">Operational services (Thimphu Thromde)</h6>
+            <hr />
+            <div class="row  sub-category-operational-services-info">
+              <div class="sub-category-disclaimer">Thimphu Thromde Toll-free : 2550 </div>
+              <div class="col-md-11 col-lg-11 col-sm-11 col-xs-12 offset-md-1 offset-lg-1">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Service Type</th>
+                      <th scope="col">Persin Incharge</th>
+                      <th scope="col">Contact</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Water Supply </td>
+                    <td>Penjor Drukpa</td>
+                    <td>17602626</td>
+                  </tr>
+                  <tr>
+                    <td>Sanitation (sewage)</td>
+                    <td>Tashi Dorji</td>
+                    <td>77324172</td>
+                  </tr>
+                  <tr>
+                    <td>Street Light </td>
+                    <td>Kinzang Gyeltshen </td>
+                    <td>77218499</td>
+                  </tr>
+                  <tr>
+                    <td>BPC</td>
+                    <td>Karma Chophel</td>
+                    <td>17392785</td>
+                  </tr>
+                  <tr>
+                    <td>Bhutan Telecom</td>
+                    <td>Sangay Choeda</td>
+                    <td>17113077</td>
+                  </tr>
+                  <tr>
+                    <td>Tashi Cell</td>
+                    <td>Sonam Dorji</td>
+                    <td>77101117</td>
+                  </tr>
+                  <tr>
+                    <td>Road and Drainage </td>
+                    <td>Jangchub Choden</td>
+                    <td>77623724</td>
+                  </tr>
+                  <tr>
+                    <td>Waste</td>
+                    <td>Ugyen Tshewang</td>
+                    <td>17611084</td>
+                  </tr>
+                  <tr>
+                    <td>Crematorium</td>
+                    <td>Nima Gyeltshen</td>
+                    <td>17489233</td>
+                  </tr>
+                  <tr>
+                    <td>LPG</td>
+                    <td>Chophel </td>
+                    <td>77673487</td>
+                  </tr>
+                  <tr>
+                    <td>Pharmacy</td>
+                    <td>Karma</td>
+                    <td>17449072</td>
+                  </tr>
+                  <tr>
+                    <td>Financial Services</td>
+                    <td>Pema Dorji</td>
+                    <td>17585550</td>
+                  </tr>
+                  <tr>
+                    <td>RSTA</td>
+                    <td>Prem P Adhikari</td>
+                    <td>17619720</td>
+                  </tr>
+                  </tbody>
+                </table>
+                <hr>
+              </div>
+            </div>
 
 
             <!-- ______________________________________________________________ -->
@@ -1583,6 +1666,15 @@
             $(".sub-category-petrol-services").addClass("active");
           }
         });
+        $(".sub-category-operational-services").click(function () {
+            if ($(".sub-category-operational-services").hasClass("active")) {
+              $(".sub-category-operational-services-info").css("display", "none");
+              $(".sub-category-operational-services").removeClass("active");
+            } else {
+              $(".sub-category-operational-services-info").css("display", "block");
+              $(".sub-category-operational-services").addClass("active");
+            }
+          });
     // ______________________________________________________________________________________________________________________________
   </script>
 </html>

@@ -35,26 +35,6 @@
   color: white !important;
   cursor: pointer;
 }
-/*
-.essential-supplies-info {
-  display: none;
-}
- .toll-free-info {
-  display: none;
-}
-.task-force-info {
-  display: none;
-}
-.health-info {
-  display: none;
-}
-.task-force-info {
-  display: none;
-}
-.services-info {
-  display: none;
-} */
-
 /*_________________________________________ */
 .sub-category-food-info {
   display: none;
@@ -132,3 +112,34 @@
 }
 
 /*_________________________________________ */
+
+@media only screen and (max-width: 1000px) {
+  .category {
+    background: #ffbe16;
+    height: 50px;
+    padding: 0px 10px 0px 20px;
+  }
+
+  .fa-chevron-circle-down {
+    float: right;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    display: none;
+    padding-top: 10px;
+  }
+  .fa-chevron-circle-up {
+    float: right;
+    font-size: 30px;
+    color: white !important;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+  .topic {
+    float: left;
+    font-size: 30px;
+  }
+  .sub-category {
+    font-size: 25px;
+  }
+}

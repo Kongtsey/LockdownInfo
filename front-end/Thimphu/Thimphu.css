@@ -82,6 +82,12 @@
 .sub-category-contraceptive-info {
   display: none;
 }
+.sub-category-pharmacy-info {
+  display: none;
+}
+.sub-category-petrol-services-info {
+  display: none;
+}
 /*_________________________________________ */
 .sub-category {
   margin-left: 50px;

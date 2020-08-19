@@ -7,7 +7,13 @@
 .table td a:hover{ 
   color:green !important;
 }
-
+.highlights{
+  margin-bottom:0 !important;
+}
+#myInput{
+  border: solid 1px gray;
+  width:40%;
+}
 
 /*End of phuntsho's code 
 ____________________________________________________________________________________________

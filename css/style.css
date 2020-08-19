@@ -15,6 +15,30 @@
   width:40%;
 }
 
+a{
+  cursor: pointer;
+}
+.eastern-region{
+  display: none;
+}
+.central-region{
+  display: none;
+}
+.western-region{
+  display: none;
+}
+.southern-region{
+  display: none;
+}
+.fa-chevron-circle-down{
+  float: right; 
+  padding-top: 8px;
+}
+.fa-chevron-circle-up{
+  display:none !important;
+  float: right; 
+  padding-top: 8px;
+}
 /*End of phuntsho's code 
 ____________________________________________________________________________________________
 */

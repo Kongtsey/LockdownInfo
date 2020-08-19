@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <div class="wrapper d-flex align-items-stretch">
@@ -29,64 +28,56 @@
               <a href="#">National</a>
             </li>
             <li>
-              <a id="bumthang"> Bumthang</a>
+              <a id="western" class="regional">
+                Western
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+              </a>
+              <span class="western-region">
+                <a> &nbsp; &nbsp;&nbsp;Chhukha</a>
+                <a>&nbsp; &nbsp;&nbsp;Haa</a>
+                <a>&nbsp; &nbsp;&nbsp;Paro</a>
+                <a>&nbsp; &nbsp;&nbsp;Samtse</a>
+                <a>&nbsp; &nbsp;&nbsp;Thimphu</a>
+              </span>
             </li>
             <li>
-              <a href="#">Chhukha</a>
+              <a id="central" class="regional">
+                Central
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+              </a>
+              <span class="central-region">
+                <a> &nbsp; &nbsp;&nbsp;Bumthang</a>
+                <a>&nbsp; &nbsp;&nbsp;Trongsa</a>
+                <a>&nbsp; &nbsp;&nbsp;Zhemgang</a>
+                <a>&nbsp; &nbsp;&nbsp;Tsirang</a>
+                <a>&nbsp; &nbsp;&nbsp;Thimphu</a>
+              </span>
             </li>
             <li>
-              <a href="#"> Dagana</a>
+              <a id="southern" class="regional">
+                Southern
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+              </a>
+              <span class="southern-region">
+                <a> &nbsp; &nbsp;&nbsp;Bumthang</a>
+                <a>&nbsp; &nbsp;&nbsp;Trongsa</a>
+                <a>&nbsp; &nbsp;&nbsp;Zhemgang</a>
+                <a>&nbsp; &nbsp;&nbsp;Tsirang</a>
+                <a>&nbsp; &nbsp;&nbsp;Thimphu</a>
+              </span>
             </li>
             <li>
-              <a href="#">Gasa</a>
-            </li>
-            <li>
-              <a href="#">Haa</a>
-            </li>
-            <li>
-              <a href="#">Lhuentse</a>
-            </li>
-            <li>
-              <a href="#">Mongar</a>
-            </li>
-            <li>
-              <a href="#"> Paro</a>
-            </li>
-            <li>
-              <a href="#">Pemagatshel</a>
-            </li>
-            <li>
-              <a href="#">Punakha</a>
-            </li>
-            <li>
-              <a href="#">Samdrupjongkhar</a>
-            </li>
-            <li>
-              <a href="#">Samtse</a>
-            </li>
-            <li>
-              <a href="#">Sarpang</a>
-            </li>
-            <li>
-              <a href="#">Thimphu</a>
-            </li>
-            <li>
-              <a href="#">Trashigang</a>
-            </li>
-            <li>
-              <a href="#">Trashiyangtse</a>
-            </li>
-            <li>
-              <a href="#">Trongsa</a>
-            </li>
-            <li id="tsirang">
-              <a href="#"> Tsirang</a>
-            </li>
-            <li>
-              <a href="#">Wangduephodrang</a>
-            </li>
-            <li>
-              <a href="#">Zhemganag</a>
+              <a id="eastern" class="regional">
+                Eastern
+                <i class="fa fa-chevron-circle-down" aria-hidden="true"> </i>
+              </a>
+              <span class="eastern-region">
+                <a> &nbsp; &nbsp;&nbsp;Bumthang</a>
+                <a>&nbsp; &nbsp;&nbsp;Trongsa</a>
+                <a>&nbsp; &nbsp;&nbsp;Zhemgang</a>
+                <a>&nbsp; &nbsp;&nbsp;Tsirang</a>
+                <a>&nbsp; &nbsp;&nbsp;Thimphu</a>
+              </span>
             </li>
           </ul>
 
@@ -119,11 +110,26 @@
         $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
         $("#highlights").load("highlights.html", function (responseTxt, statusTxt, jqXHR) {});
       });
+
       $("#guidelines").click(function () {
         $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
       });
       $("#national").click(function () {
         $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+      });
+
+      // Displaying the dzonkkhag when the user click on the region
+      $("#western").click(function () {
+        $(".western-region").toggle();
+      });
+      $("#eastern").click(function () {
+        $(".eastern-region").toggle();
+      });
+      $("#southern").click(function () {
+        $(".southern-region").toggle();
+      });
+      $("#central").click(function () {
+        $(".central-region").toggle();
       });
     </script>
   </body>

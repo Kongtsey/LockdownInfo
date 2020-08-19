@@ -1,0 +1,108 @@
+<h1 class="mb-4">Guidelines</h1>
+<input class="form-control" id="myInput" type="text" style="border: solid 1px gray; color: gray;" value="Search.." />
+<br />
+<table class="table" id="selectedColumn">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Date Uploaded</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td>1.</td>
+      <td>
+        <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3382997755095150/3382995411762051/?type=3&theater">
+          How to access esential health services during lockdown
+        </a>
+      </td>
+      <td>August 14</td>
+      <td>MOH facebook</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>
+        <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3382911001770492/3382903455104580/?type=3&theater">
+          How to access esential health services during lockdown (Dzo)
+        </a>
+      </td>
+      <td>August 14</td>
+      <td>MOH facebook</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>
+        <a href="https://www.facebook.com/MoHBhutan/videos/309293056965137/">
+          How to take care of your mental health during lockdown
+        </a>
+      </td>
+      <td>August 15</td>
+      <td>MOH facebook</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>
+        <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3394424407285818/3394399140621678/?type=3&theater">
+          Do's and Dont's for breastfeeding mothers and mothers
+        </a>
+      </td>
+      <td>August 18</td>
+      <td>MOH facebook</td>
+    </tr>
+
+    <tr>
+      <td>5.</td>
+      <td>
+        <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3394424407285818/3394398770621715/?type=3&theater">
+          Do's and Dont's for breastfeeding mothers and mothers (Dzo)
+        </a>
+      </td>
+      <td>August 18</td>
+      <td>MOH facebook</td>
+    </tr>
+
+    <tr>
+      <td>6.</td>
+      <td>
+        <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3388435444551381/3388421421219450/?type=3&theater">
+          Things you can do during lockdown
+        </a>
+      </td>
+      <td>August 16</td>
+      <td>MOH facebook</td>
+    </tr>
+
+    <tr>
+      <td>7.</td>
+      <td>
+        <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3388435444551381/3388420947886164/?type=3&theater">
+          Things you can do during lockdown (Dzo)
+        </a>
+      </td>
+      <td>August 16</td>
+      <td>MOH facebook</td>
+    </tr>
+
+    <tr>
+      <td>8.</td>
+      <td>
+        <a href="https://m.facebook.com/story.php?story_fbid=3372516619476597&id=755187864542832">
+          Essential information on lockdown (Dzo and Eng)
+        </a>
+      </td>
+      <td>August 11</td>
+      <td>MOH facebook</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  $("#myInput").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+    });
+  });
+</script>

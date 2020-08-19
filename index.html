@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <div class="wrapper d-flex align-items-stretch">
@@ -22,7 +22,10 @@
           <h1><a href="index.html" class="logo">Level</a></h1>
 
           <ul class="list-unstyled components mb-5">
-            <li class="active">
+            <li class="active" id="guidelines">
+              <a href="#">Guidelines</a>
+            </li>
+            <li id="national">
               <a href="#">National</a>
             </li>
             <li>
@@ -76,7 +79,7 @@
             <li>
               <a href="#">Trongsa</a>
             </li>
-            <li>
+            <li id="tsirang">
               <a href="#"> Tsirang</a>
             </li>
             <li>
@@ -99,9 +102,13 @@
       </nav>
 
       <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5"></div>
-    </div>
 
+      <div class="p-4 p-md-5 pt-5 parent" style="width: 100%;">
+        <div id="highlights" class="p-4 p-md-5 pt-5"></div>
+        <div id="content" class="p-4 p-md-5 pt-5"></div>
+      </div>
+    </div>
+    <!-- --------------------- START FO THE SCRIPT FILE --------------------- -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -109,15 +116,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function () {
-        console.log("hello world");
-        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {
-          if (statusTxt == "success") {
-            alert("New content loaded successfully!");
-          }
-          if (statusTxt == "error") {
-            alert("Error: " + jqXHR.status + " " + jqXHR.statusText);
-          }
-        });
+        $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
+        $("#highlights").load("highlights.html", function (responseTxt, statusTxt, jqXHR) {});
+      });
+      $("#guidelines").click(function () {
+        $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
+      });
+      $("#national").click(function () {
+        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
       });
     </script>
   </body>

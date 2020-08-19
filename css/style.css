@@ -1,3 +1,17 @@
+.table th {
+  /* border-top: none !important; */
+}
+.table td{
+  border-bottom: solid 1px #f1f1f1;
+}
+.table td a:hover{ 
+  color:green !important;
+}
+
+
+/*End of phuntsho's code 
+____________________________________________________________________________________________
+*/
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

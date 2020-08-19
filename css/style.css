@@ -7,12 +7,27 @@
 .table td a:hover{ 
   color:green !important;
 }
+.title{
+  margin-left:10px !important;
+  margin-bottom:0px;
+  font-size: medium;
+}
+.title a:hover{ 
+  color:green !important;
+}
+.sub-info{ 
+  font-size:10px; 
+} 
+#date-posted{
+  margin-left:10px;
+}
 .highlights{
   margin-bottom:0 !important;
 }
 #myInput{
   border: solid 1px gray;
   width:40%;
+  margin-left: 25px;
 }
 
 a{

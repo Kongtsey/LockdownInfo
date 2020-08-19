@@ -1,7 +1,75 @@
 <h1 class="mb-4">Guidelines</h1>
 <input class="form-control" id="myInput" type="text" value="Search.." />
 <br />
-<table class="table" id="selectedColumn">
+<main id="myTable"> 
+    <ol>
+        <hr>
+        <li> 
+            <div class="row"> 
+            <p class="col-md-12 col-lg-12 col-sm-12 col-12 title"> 
+                <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3382997755095150/3382995411762051/?type=3&theater">
+                    How to access esential health services during lockdown 
+                    &nbsp; <sapn class="sub-info" style="color:gray !important"> posted on August 14 on MOH facebook</sapn>
+                </a>
+            </p>
+        </li>   
+        <hr>
+        <li >
+            <div class="row"> 
+            <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3382911001770492/3382903455104580/?type=3&theater">
+                    How to access esential health services during lockdown (Dzo)
+                    &nbsp; <sapn class="sub-info" style="color:gray !important"> posted on August 14 on MOH facebook</sapn>
+                </a>
+            </p>
+            </div>
+        </li>
+        <hr>
+        <li>
+            <div class="row">
+                <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                    <a href="https://www.facebook.com/MoHBhutan/videos/309293056965137/">
+                        How to take care of your mental health during lockdown
+                        &nbsp; <sapn class="sub-info" style="color:gray !important"> posted on August 15 on MOH facebook</sapn>
+                    </a>
+                </p>
+        </li>
+        <hr>
+        <li>
+            <div class="row">
+                <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                    <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3394424407285818/3394399140621678/?type=3&theater">
+                        Do's and Dont's for breastfeeding mothers and mothers
+                        &nbsp; <sapn class="sub-info" style="color:gray !important"> posted on August 18 on MOH facebook</sapn>
+                    </a>
+                </p>
+            </div>
+        </li>
+        <hr>
+        <li>
+            <div class="row">
+                <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                    <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3394424407285818/3394398770621715/?type=3&theater">
+                        Do's and Dont's for breastfeeding mothers and mothers (Dzo)
+                        &nbsp; <sapn class="sub-info" style="color:gray !important"> posted on August 18 on MOH facebook</sapn>
+                    </a>
+                </p>
+        </li>
+        <hr>
+        <li>
+            <div class="row">
+                <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                    <a href="https://m.facebook.com/story.php?story_fbid=3372516619476597&id=755187864542832">
+                        Essential information on lockdown (Dzo and Eng)
+                        &nbsp; <sapn class="sub-info" style="color:gray !important"> posted on August 11 on MOH facebook</sapn>
+                    </a>
+                </p>
+            </div>
+        </li>
+        <hr>
+    </ol>
+</main>
+<!-- <table class="table" id="selectedColumn">
   <thead>
     <tr>
       <th></th>
@@ -72,7 +140,8 @@
       </td>
       <td>August 11</td>
       <td>MOH facebook</td>
-    </tr>
+    </tr> -->
+
     <!-- <tr>
       <td>6.</td>
       <td>
@@ -100,7 +169,7 @@
 <script>
   $("#myInput").on("keyup", function () {
     var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function () {
+    $("#myTable li").filter(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
   });

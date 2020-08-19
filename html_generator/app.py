@@ -13,9 +13,7 @@ with open(val) as csv_file:
             <html lang='en' >\n\
             <head >\n\
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' / >\n\
-            <link rel='stylesheet' href='css/")
-    f.write(val)
-    f.write(".css'></head >\n <body>\n")
+    f.write(".css'> </head >\n < body >\n")
     f.write('<h1 class = "mb-4" > Thimphu </h1>\n <input class = "form-control" id = "myInput" type = "text" value = "Search.."/> \n<br/> \n\
                      <p style = "float:right;"> Last Updated on ' + date.today().strftime("%B, %d, %Y") + ' </p>\n <br > \n<main id = "myTable" > \n <ol > \n <hr > ')
 

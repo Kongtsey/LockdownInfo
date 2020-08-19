@@ -36,8 +36,7 @@
                 <a> &nbsp; &nbsp;&nbsp;Chhukha</a>
                 <a>&nbsp; &nbsp;&nbsp;Haa</a>
                 <a>&nbsp; &nbsp;&nbsp;Paro</a>
-                <a>&nbsp; &nbsp;&nbsp;Samtse</a>
-                <a>&nbsp; &nbsp;&nbsp;Thimphu</a>
+                <a id="thimphu">&nbsp; &nbsp;&nbsp;Thimphu</a>
               </span>
             </li>
             <li>
@@ -49,8 +48,6 @@
                 <a> &nbsp; &nbsp;&nbsp;Bumthang</a>
                 <a>&nbsp; &nbsp;&nbsp;Trongsa</a>
                 <a>&nbsp; &nbsp;&nbsp;Zhemgang</a>
-                <a>&nbsp; &nbsp;&nbsp;Tsirang</a>
-                <a>&nbsp; &nbsp;&nbsp;Thimphu</a>
               </span>
             </li>
             <li>
@@ -59,11 +56,9 @@
                 <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
               </a>
               <span class="southern-region">
-                <a> &nbsp; &nbsp;&nbsp;Bumthang</a>
-                <a>&nbsp; &nbsp;&nbsp;Trongsa</a>
-                <a>&nbsp; &nbsp;&nbsp;Zhemgang</a>
+                <a> &nbsp; &nbsp;&nbsp;Samtser</a>
+                <a>&nbsp; &nbsp;&nbsp;Sarpang </a>
                 <a>&nbsp; &nbsp;&nbsp;Tsirang</a>
-                <a id="thimphu">&nbsp; &nbsp;&nbsp;Thimphu</a>
               </span>
             </li>
             <li>
@@ -72,11 +67,11 @@
                 <i class="fa fa-chevron-circle-down" aria-hidden="true"> </i>
               </a>
               <span class="eastern-region">
-                <a> &nbsp; &nbsp;&nbsp;Bumthang</a>
-                <a>&nbsp; &nbsp;&nbsp;Trongsa</a>
-                <a>&nbsp; &nbsp;&nbsp;Zhemgang</a>
-                <a>&nbsp; &nbsp;&nbsp;Tsirang</a>
-                <a>&nbsp; &nbsp;&nbsp;Thimphu</a>
+                <a> &nbsp; &nbsp;&nbsp;Trashignag</a>
+                <a>&nbsp; &nbsp;&nbsp;Pemagatshel</a>
+                <a>&nbsp; &nbsp;&nbsp;Trashiyangtse</a>
+                <a>&nbsp; &nbsp;&nbsp;Lhuentse</a>
+                <a>&nbsp; &nbsp;&nbsp;Samdrupjongkhar</a>
               </span>
             </li>
           </ul>
@@ -93,8 +88,8 @@
       </nav>
 
       <!-- Page Content  -->
-      <div class="p-4 p-md-5 pt-5 parent" style="width: 100%; border: solid red;">
-        <div id="highlights" class="p-4 p-md-5 pt-5" style="margin-bottom: 0 !important;"></div>
+      <div class="p-4 p-md-5 pt-5 parent" style="width: 100%;">
+        <!-- <div id="highlights" class="p-4 p-md-5 pt-5" style="margin-bottom: 0 !important;"></div> -->
         <div id="content" class="p-4 p-md-5 pt-5"></div>
       </div>
     </div>
@@ -107,7 +102,7 @@
     <script>
       $(document).ready(function () {
         $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
-        $("#highlights").load("highlights.html", function (responseTxt, statusTxt, jqXHR) {});
+        // $("#highlights").load("highlights.html", function (responseTxt, statusTxt, jqXHR) {});
       });
 
       $("#guidelines").click(function () {

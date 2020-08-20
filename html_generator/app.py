@@ -1,9 +1,7 @@
 import csv
 from datetime import date
 
-# val = input("Enter your filename: ")
-
-val = "./Thimphu.csv"
+val = input("Enter your filename: ")
 value = val.replace("./", "")
 html_name = value
 value = value.replace(".csv", "")
@@ -31,7 +29,7 @@ with open(val) as csv_file:
             print("not coming here")
             f.write('\n <li> \n <p class="col-md-12 col-lg-12 col-sm-12 col-12 title"> \n <a href="' +
                     row[3]+'" target="_blank">' + row[0] + ' \n &nbsp;\n <span class="sub-info" style="color:gray !important">\
-                    posted on ' + row[1] + ' on ' + row[2] + '</span> \n </a>\n</p>\n</li>\n')
+                    posted on ' + row[1] + '</span> \n </a>\n</p>\n</li>\n')
 
             line_count += 1
     f.write(' \n </body> \n</html>')

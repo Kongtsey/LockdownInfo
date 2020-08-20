@@ -29,62 +29,55 @@
           <h1><a href="index.html" class="logo">Level</a></h1>
 
           <ul class="list-unstyled components mb-5">
-            <li class="active" id="guidelines">
-              <a href="#" class="level-titles">Guidelines</a>
-            </li>
-            <li id="national">
-              <a href="#" class="level-titles">National</a>
-            </li>
+            <li class="active" id="guidelines"><a href="#" class="level-titles">Guidelines</a></li>
+            <li id="national"><a href="#" class="level-titles">National</a></li>
             <li>
-              <a id="western" class="regional">
-                Western
-                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-              </a>
+              <a id="western" class="regional">Western<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
               <span class="western-region">
-                <a class="level-titles"> &nbsp; &nbsp;&nbsp;Chhukha</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Haa</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Paro</a>
+                <a id="gasa" class="level-titles"> &nbsp; &nbsp;&nbsp;Gasa</a>
+                <a id="haa" class="level-titles">&nbsp; &nbsp;&nbsp;Haa</a>
+                <a id="paro" class="level-titles">&nbsp; &nbsp;&nbsp;Paro</a>
+                <a id="punakha" class="level-titles">&nbsp; &nbsp;&nbsp;Punakha</a>
                 <a id="thimphu" class="level-titles">&nbsp; &nbsp;&nbsp;Thimphu</a>
+                <a id="wangduephodrang" class="level-titles">&nbsp; &nbsp;&nbsp;Wangduephodrang</a>
               </span>
             </li>
+
             <li>
-              <a id="central" class="regional">
-                Central
-                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-              </a>
+              <a id="central" class="regional">Central <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
               <span class="central-region">
-                <a class="level-titles"> &nbsp; &nbsp;&nbsp;Bumthang</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Trongsa</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Zhemgang</a>
+                <a id="bumthang" class="level-titles"> &nbsp; &nbsp;&nbsp;Bumthang</a>
+                <a id="trongsa" class="level-titles">&nbsp; &nbsp;&nbsp;Trongsa</a>
+                <a id="zhemgang" class="level-titles">&nbsp; &nbsp;&nbsp;Zhemgang</a>
               </span>
             </li>
+
             <li>
-              <a id="southern" class="regional">
-                Southern
-                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-              </a>
+              <a id="southern" class="regional">Southern<i class="fa fa-chevron-circle-down" aria-hidden="true"></i> </a>
               <span class="southern-region">
-                <a class="level-titles"> &nbsp; &nbsp;&nbsp;Samtser</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Sarpang </a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Tsirang</a>
+                <a id="dagana" class="level-titles"> &nbsp; &nbsp;&nbsp;Dagana</a>
+                <a id="chhukha" class="level-titles">&nbsp; &nbsp;&nbsp;Chhukha </a>
+                <a id="samtse" class="level-titles">&nbsp; &nbsp;&nbsp;Samtse</a>
+                <a id="sarpang" class="level-titles">&nbsp; &nbsp;&nbsp;Sarpang</a>
+                <a id="tsirang" class="level-titles">&nbsp; &nbsp;&nbsp;Tsirang</a>
               </span>
             </li>
             <li>
-              <a id="eastern" class="regional">
-                Eastern
-                <i class="fa fa-chevron-circle-down" aria-hidden="true"> </i>
-              </a>
+              <a id="eastern" class="regional">Eastern<i class="fa fa-chevron-circle-down" aria-hidden="true"> </i></a>
               <span class="eastern-region">
-                <a class="level-titles"> &nbsp; &nbsp;&nbsp;Trashignag</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Pemagatshel</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Trashiyangtse</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Lhuentse</a>
-                <a class="level-titles">&nbsp; &nbsp;&nbsp;Samdrupjongkhar</a>
+                <a id="lhuentse" class="level-titles"> &nbsp; &nbsp;&nbsp;Lhuentse</a>
+                <a id="mongar" class="level-titles">&nbsp; &nbsp;&nbsp;Mongar</a>
+                <a id="pemagatshel" class="level-titles">&nbsp; &nbsp;&nbsp;Pemagatshel</a>
+                <a id="samdrukjongkhar" class="level-titles">&nbsp; &nbsp;&nbsp;Samdrupjongkhar</a>
+                <a id="trashigang" class="level-titles">&nbsp; &nbsp;&nbsp;Trashigang</a>
+                <a id="trashiyangtse" class="level-titles">&nbsp; &nbsp;&nbsp;Trashiyangtse</a>
               </span>
             </li>
           </ul>
 
           <div class="footer">
+            <p id="about-us" style="text-align: center;">About Us</p>
+            <br />
             <p style="font-size: small; text-align: center;">
               Email us at email@gmail.com for any suggestion or feedback.
             </p>
@@ -115,14 +108,137 @@
 
       $("#guidelines").click(function () {
         $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights")) {
+          $("#highlights").removeClass("hide-highlights");
+        }
       });
       $("#national").click(function () {
         $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
-        $("#highlights").toggle();
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          console.log("sdsdfsfsdfsdfsdf");
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#bumthang").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+
+      $("#chhukha").click(function () {
+        $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#dagana").click(function () {
+        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#gasa").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#haa").click(function () {
+        $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#lhuentse").click(function () {
+        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#mongar").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#paro").click(function () {
+        $("#content").load("Paro.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#pemagatshel").click(function () {
+        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#punakha").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#samdrupjongkhar").click(function () {
+        $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#samtse").click(function () {
+        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#sarpang").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
       });
       $("#thimphu").click(function () {
         $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
-        $("#highlights").toggle();
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#trashigang").click(function () {
+        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#trashiyangtse").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#trongsa").click(function () {
+        $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#tsirang").click(function () {
+        $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#wangduephodrang").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
+      $("#zhemgang").click(function () {
+        $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
       });
 
       // Displaying the dzonkkhag when the user click on the region

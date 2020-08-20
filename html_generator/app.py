@@ -12,8 +12,7 @@ with open(val) as csv_file:
         "<!DOCTYPE html > \n\
             <html lang='en' >\n\
             <head >\n\
-            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' / >\n\
-    f.write(".css'> </head >\n < body >\n")
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'/>\n  </head >\n <body>")
     f.write('<h1 class = "mb-4" > Thimphu </h1>\n <input class = "form-control" id = "myInput" type = "text" value = "Search.."/> \n<br/> \n\
                      <p style = "float:right;"> Last Updated on ' + date.today().strftime("%B, %d, %Y") + ' </p>\n <br > \n<main id = "myTable" > \n <ol > \n <hr > ')
 
@@ -25,7 +24,8 @@ with open(val) as csv_file:
         else:
             print("not coming here")
             f.write('\n <li> \n <p class="col-md-12 col-lg-12 col-sm-12 col-12 title"> \n <a href="' +
-                    row[3]+'">' + row[0] + ' \n &nbsp;\n <span class="sub-info" style="color:gray !important"> posted on ' + row[1] + ' on ' + row[2] + '</span> \n </a>\n</p>\n</li>\n <hr>')
+                    row[3]+'" target="_blank">' + row[0] + ' \n &nbsp;\n <span class="sub-info" style="color:gray !important">\
+                    posted on ' + row[1] + ' on ' + row[2] + '</span> \n </a>\n</p>\n</li>\n')
 
             line_count += 1
     f.write(' \n </body> \n</html>')

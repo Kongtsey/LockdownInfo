@@ -97,7 +97,7 @@
 
       <!-- Page Content  -->
       <div class="p-4 p-md-5 pt-5 parent" style="width: 100%;">
-        <!-- <div id="highlights" class="p-4 p-md-5 pt-5" style="margin-bottom: 0 !important;"></div> -->
+        <div id="highlights" class="p-4 p-md-5 pt-5" style="margin-bottom: 0 !important;"></div>
         <div id="content" class="p-4 p-md-5 pt-5"></div>
       </div>
     </div>
@@ -110,7 +110,7 @@
     <script>
       $(document).ready(function () {
         $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
-        // $("#highlights").load("highlights.html", function (responseTxt, statusTxt, jqXHR) {});
+        $("#highlights").load("highlights.html", function (responseTxt, statusTxt, jqXHR) {});
       });
 
       $("#guidelines").click(function () {

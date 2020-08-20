@@ -97,7 +97,7 @@
 
       <!-- Page Content  -->
       <div class="p-4 p-md-5 pt-5 parent" style="width: 100%;">
-        <div id="highlights" class="p-4 p-md-5 pt-5" style="margin-bottom: 0 !important;"></div>
+        <div id="highlights" class="p-4 p-md-5 pt-5" style="margin-bottom: -100px !important;"></div>
         <div id="content" class="p-4 p-md-5 pt-5"></div>
       </div>
     </div>
@@ -118,9 +118,11 @@
       });
       $("#national").click(function () {
         $("#content").load("national.html", function (responseTxt, statusTxt, jqXHR) {});
+        $("#highlights").toggle();
       });
       $("#thimphu").click(function () {
         $("#content").load("Thimphu.html", function (responseTxt, statusTxt, jqXHR) {});
+        $("#highlights").toggle();
       });
 
       // Displaying the dzonkkhag when the user click on the region

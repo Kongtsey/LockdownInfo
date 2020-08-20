@@ -11,6 +11,7 @@
             <main id="myTable">
                 <ol>
                     <hr>
+                    <p class="category-title" >Essential Supplies</p>
                     <li>
                         <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
                             <a href="http://www.punakha.gov.bt/announcements/contact-details-essential-service-providers-wholesale-and-retailers"
@@ -30,7 +31,7 @@
                             </a>
                         </p>
                     </li>
-
+                    <p class="category-title" >General Health Service</p>
                     <li>
                         <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
                             <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3382997755095150/3385966034798322/?type=3&theater" target="_blank">Focals
@@ -50,7 +51,7 @@
                             </a>
                         </p>
                     </li>
-
+                     <p class="category-title" >Local Leaders</p>
                     <li>
                         <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
                             <a href="https://www.facebook.com/PMOBhutan/photos/pcb.3146796082099740/3146794685433213/?type=3&theater" target="_blank">Contact
@@ -70,7 +71,7 @@
                             </a>
                         </p>
                     </li>
-
+                     <p class="category-title" >Dzongkhag Webpage</p>
                     <li>
                         <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
                             <a href="http://www.punakha.gov.bt/" target="_blank">Dzongkhag Website
@@ -88,7 +89,7 @@
                             </a>
                         </p>
                     </li>
-
+                     <p class="category-title" >Task force</p>
                     <li>
                         <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
                             <a href="http://www.punakha.gov.bt/announcements/contact-details-essential-service-providers-wholesale-and-retailers"
@@ -100,4 +101,14 @@
                     </li>
 
                 </body>
+                
+                <script>
+                    $("#myInput").on("keyup", function () {
+                        var value = $(this).val().toLowerCase();
+                        $("#myTable li").filter(function () {
+                            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                        });
+                    });
+
+                </script>
             </html>

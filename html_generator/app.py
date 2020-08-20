@@ -17,8 +17,8 @@ with open(val) as csv_file:
             <html lang='en' >\n\
             <head >\n\
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'/>\n  </head >\n <body>")
-    f.write('<h1 class = "mb-4" >' + value + '</h1>\n <input class = "form-control" id = "myInput" type = "text" value = "Search.."/> \n<br/> \n\
-                     <p style = "float:right;"> Last Updated on ' + date.today().strftime("%B, %d, %Y") + ' </p>\n <br > \n<main id = "myTable" > \n <ol > \n <hr > ')
+    f.write('<h1 class = "mb-4" >' + value + '</h1>\n <p style="float:left; padding:5px">search: &nbsp</p> <input class = "form-control" id = "myInput" type = "text" value = "Search.."/> \n<br/> \n\
+                     <p style = "margin-left:30px"> Last Updated on ' + date.today().strftime("%B, %d, %Y") + ' </p>\n <br > \n<main id = "myTable" > \n <ol > \n <hr > ')
 
     for row in csv_reader:
         if line_count == 0:

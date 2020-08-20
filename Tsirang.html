@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'/>
+    </head>
+    <body><h1 class="mb-4">Tsirang</h1>
+        <input class="form-control" id="myInput" type="text" value="Search.." />
+        <br/>
+            <p style="float:right;"> Last Updated on August, 20, 2020 </p>
+            <br>
+            <main id="myTable">
+                <ol>
+                    <hr>
+                    <p class="category-title" >General Health Services</p>
+                    <li>
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                            <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3382997755095150/3385966041464988/?type=3&theater" target="_blank">Focals
+                                for Essential services (Southern Region)
+                                &nbsp;
+                                <span class="sub-info" style="color:gray !important"> posted on August 14</span>
+                            </a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                            <a href="https://www.facebook.com/MoHBhutan/photos/pcb.3382911001770492/3382906525104273/?type=3&theater" target="_blank">Focals
+                                for Essential services (Southern Region) - DZO
+                                &nbsp;
+                                <span class="sub-info" style="color:gray !important"> posted on August 14</span>
+                            </a>
+                        </p>
+                    </li>
+                    <p class="category-title" >Local Leader</p>
+                    <li>
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                            <a href="https://www.facebook.com/PMOBhutan/photos/pcb.3146796082099740/3146794685433213/?type=3&theater" target="_blank">Contact
+                                details of Dzongdags
+                                &nbsp;
+                                <span class="sub-info" style="color:gray !important"> posted on August 11</span>
+                            </a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                            <a href="https://www.facebook.com/BHUTANMOEA/photos/a.626003584132913/3230046650395247/?type=3&theater" target="_blank">Details
+                                of Focal Officers in Dzongkhags
+                                &nbsp;
+                                <span class="sub-info" style="color:gray !important"> posted on August 11</span>
+                            </a>
+                        </p>
+                    </li>
+                    <p class="category-title" >Helpline</p>
+                    <li>
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                            <a href="http://www.tsirang.gov.bt/announcements/notification-stranded-public-tsirang-dzongkhag" target="_blank">Notification
+                                to the stranded public in Tsirang Dzongkhag
+                                &nbsp;
+                                <span class="sub-info" style="color:gray !important"> posted on </span>
+                            </a>
+                        </p>
+                    </li>
+                    <p class="category-title" >Dzongkhag Webpage</p>
+                    <li>    
+                        <p class="col-md-12 col-lg-12 col-sm-12 col-12 title">
+                            <a href="http://www.tsirang.gov.bt/node/1" target="_blank">Dzongkhag Website
+                                &nbsp;
+                                <span class="sub-info" style="color:gray !important"> posted on </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </body>
+                <script>
+                    $("#myInput").on("keyup", function () {
+                        var value = $(this).val().toLowerCase();
+                        $("#myTable li").filter(function () {
+                            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                        });
+                    });
+                </script>
+            </html>

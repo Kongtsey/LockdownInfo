@@ -244,15 +244,45 @@
       // Displaying the dzonkkhag when the user click on the region
       $("#western").click(function () {
         $(".western-region").toggle();
+        if ($(".eastern-region").css("display") != "none") {
+          $(".eastern-region").toggle();
+        } else if ($(".southern-region").css("display") != "none") {
+          $(".southern-region").toggle();
+        } else if ($(".central-region").css("display") != "none") {
+          $(".central-region").toggle();
+        }
       });
       $("#eastern").click(function () {
         $(".eastern-region").toggle();
+        if ($(".western-region").css("display") != "none") {
+          $(".western-region").toggle();
+        } else if ($(".southern-region").css("display") != "none") {
+          $(".southern-region").toggle();
+        } else if ($(".central-region").css("display") != "none") {
+          $(".central-region").toggle();
+        }
       });
+
       $("#southern").click(function () {
         $(".southern-region").toggle();
+        if ($(".eastern-region").css("display") != "none") {
+          $(".eastern-region").toggle();
+        } else if ($(".western-region").css("display") != "none") {
+          $(".western-region").toggle();
+        } else if ($(".central-region").css("display") != "none") {
+          $(".central-region").toggle();
+        }
       });
+
       $("#central").click(function () {
         $(".central-region").toggle();
+        if ($(".eastern-region").css("display") != "none") {
+          $(".eastern-region").toggle();
+        } else if ($(".southern-region").css("display") != "none") {
+          $(".southern-region").toggle();
+        } else if ($(".western-region").css("display") != "none") {
+          $(".western-region").toggle();
+        }
       });
     </script>
   </body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  </head>
+  <body>
+    <h1 class="mb-4">About Us</h1>
+    <p>
+      Bhutan Covid-19 Youth Initiative is inspired by His Majesty the Fifth Druk Gyalpo and represents a collective effort of the Bhutan Covid-19 Youth Initiative. Our Team is made up of a small but
+      growing group of Bhutanese youth based in Thimphu. We are dedicated towards providing updated and reliable information on all essential services throughout the country. Official updates are
+      organized by service category for your easy access. We present this website to the Bhutanese public as our humble contribution to our national efforts to combat this virus.
+    </p>
+    <br />
+    <p>
+      <span style="color:blue"> Disclaimer: </span> We plan to expand on the service information provided here as they become available. Please contact us at <span style="color:blue"> bhutancovid19.youthinitiative@gmail.com </span>with any feedback or suggestions.
+       <ul>
+           <li>
+               We request the Dzongkhag administrators to continue uploading useful information on their websites and Facebook pages. We would like to further request for clear guidelines on who to 
+               call for what purpose to avoid misdirected calls.
+            </li>
+            <li>
+                If you are providing services during these times, please make sure that you are registered with your dzongkhag administrators so that your information is available to the general public.
+            </li>
+            <li>
+                We would like to remind people to only trust official government and news sources. We should all strive to combat fake news in every form. 
+            </li>
+       </ul> 
+    </p>
+
+    <br> 
+    <h6> How to use the website</h6>
+    <ul>
+        <li>The links on this website will redirect you to official sources such as the Prime Minister’s Office, Health Ministry, Dzongkhag Administration, other government Ministries and Agencies, and a few private 
+            service providers.
+        </li>
+        <li>
+            <b>National section:</b> National resources 
+        </li>
+        <li>
+            <b>Dzongkhag section: </b>You will find here links to your Dzongkhag’s website and Facebook page. We urge you to follow these pages closely for updates. Service updates, schedules, instructions etc., can be found here. 
+            Our Team will update this website on a daily basis. 
+        </li>
+    </ul>
+
+  </body>
+  <script>
+    $("#myInput").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#myTable li").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+    });
+  </script>
+</html>

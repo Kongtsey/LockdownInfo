@@ -74,12 +74,13 @@
               </span>
             </li>
           </ul>
-
+          <p id="about" style="text-align: center;"><a class="level-titles" style="color: white !important;">About Us</a></p>
           <div class="footer">
-            <p id="about-us" style="text-align: center;">About Us</p>
             <br />
             <p style="font-size: small; text-align: center;">
-              Email us at email@gmail.com for any suggestion or feedback.
+              Email us at <br />
+              <span style="font-size: x-small;"> bhutancovid19.youthinitiative@gmail.com</span> <br />
+              for any suggestion or feedback.
             </p>
             <p style="font-size: xx-small; text-align: center;">
               This template is made by Colorlib.com
@@ -105,16 +106,20 @@
         $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
         $("#highlights").load("highlights.html", function (responseTxt, statusTxt, jqXHR) {});
       });
-
       $("#guidelines").click(function () {
         $("#content").load("guidelines.html", function (responseTxt, statusTxt, jqXHR) {});
         if ($("#highlights").hasClass("hide-highlights")) {
           $("#highlights").removeClass("hide-highlights");
         }
       });
+      $("#about").click(function () {
+        $("#content").load("about.html", function (responseTxt, statusTxt, jqXHR) {});
+        if ($("#highlights").hasClass("hide-highlights") == false) {
+          $("#highlights").addClass("hide-highlights");
+        }
+      });
       $("#national").click(function () {
         $("#content").load("National-level.html", function (responseTxt, statusTxt, jqXHR) {});
-
         if ($("#highlights").hasClass("hide-highlights") == false) {
           $("#highlights").addClass("hide-highlights");
         }
